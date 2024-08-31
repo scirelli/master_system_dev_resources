@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html data-content_root="./" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>&lt;no title&gt; — wla-dx 10.7a documentation</title>
+    <link rel="stylesheet" type="text/css" href="wla-dx%2010.7a%20documentation_files/pygments.css">
+    <link rel="stylesheet" type="text/css" href="wla-dx%2010.7a%20documentation_files/classic.css">
+    <link rel="stylesheet" type="text/css" href="wla-dx%2010.7a%20documentation_files/badge_only.css">
+    
+    <script src="wla-dx%2010.7a%20documentation_files/documentation_options.js"></script>
+    <script src="wla-dx%2010.7a%20documentation_files/doctools.js"></script>
+    <script src="wla-dx%2010.7a%20documentation_files/sphinx_highlight.js"></script>
+    <script async="async" src="wla-dx%2010.7a%20documentation_files/readthedocs-doc-embed.js"></script>
+    
+    <link rel="index" title="Index" href="https://wla-dx.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://wla-dx.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="1. Introduction" href="https://wla-dx.readthedocs.io/en/latest/introduction.html"> 
+  
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="wla-dx%2010.7a%20documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "builder": "sphinx", "canonical_url": null, "docroot": "/doc/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "index", "programming_language": "c", "project": "wla-dx", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "default", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="wla-dx%2010.7a%20documentation_files/readthedocs-analytics.js" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+<script type="text/javascript" src="wla-dx%2010.7a%20documentation_files/jquery.js"></script><script src="wla-dx%2010.7a%20documentation_files/ethicalads.min.js" type="text/javascript" async="" id="ethicaladsjs"></script></head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://wla-dx.readthedocs.io/en/latest/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="https://wla-dx.readthedocs.io/en/latest/introduction.html" title="1. Introduction" accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">wla-dx 10.7a documentation</a> »</li>
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/quickstart.html">2. Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html">3. Assembler Directives</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#bit">3.1. <code class="docutils literal notranslate"><span class="pre">.16BIT</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#id1">3.2. <code class="docutils literal notranslate"><span class="pre">.24BIT</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#id2">3.3. <code class="docutils literal notranslate"><span class="pre">.8BIT</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#accu-8">3.4. <code class="docutils literal notranslate"><span class="pre">.ACCU</span> <span class="pre">8</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#addr-16000-main-255">3.5. <code class="docutils literal notranslate"><span class="pre">.ADDR</span> <span class="pre">16000,</span> <span class="pre">main,</span> <span class="pre">255</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#align-4">3.6. <code class="docutils literal notranslate"><span class="pre">.ALIGN</span> <span class="pre">4</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arraydb-name-myarray-indices-0-0-1">3.7. <code class="docutils literal notranslate"><span class="pre">.ARRAYDB</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">INDICES</span> <span class="pre">'0',</span> <span class="pre">0,</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arraydd-name-myarray-indices-0-0-1">3.8. <code class="docutils literal notranslate"><span class="pre">.ARRAYDD</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">INDICES</span> <span class="pre">'0',</span> <span class="pre">0,</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arraydef-name-myarray-size-256">3.9. <code class="docutils literal notranslate"><span class="pre">.ARRAYDEF</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">SIZE</span> <span class="pre">256</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arraydefine-name-myarray-size-256">3.10. <code class="docutils literal notranslate"><span class="pre">.ARRAYDEFINE</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">SIZE</span> <span class="pre">256</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arraydl-name-myarray-indices-0-0-1">3.11. <code class="docutils literal notranslate"><span class="pre">.ARRAYDL</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">INDICES</span> <span class="pre">'0',</span> <span class="pre">0,</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arraydw-name-myarray-indices-0-0-1">3.12. <code class="docutils literal notranslate"><span class="pre">.ARRAYDW</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">INDICES</span> <span class="pre">'0',</span> <span class="pre">0,</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arrayin-name-myarray-index-0-value-10">3.13. <code class="docutils literal notranslate"><span class="pre">.ARRAYIN</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">INDEX</span> <span class="pre">0</span> <span class="pre">VALUE</span> <span class="pre">10</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#arrayout-name-myarray-index-0-definition-arrayout">3.14. <code class="docutils literal notranslate"><span class="pre">.ARRAYOUT</span> <span class="pre">NAME</span> <span class="pre">MyArray</span> <span class="pre">INDEX</span> <span class="pre">0</span> <span class="pre">DEFINITION</span> <span class="pre">ArrayOut</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#asc-hello-world">3.15. <code class="docutils literal notranslate"><span class="pre">.ASC</span> <span class="pre">"HELLO</span> <span class="pre">WORLD!"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#asciitable">3.16. <code class="docutils literal notranslate"><span class="pre">.ASCIITABLE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ascstr-hello-world-a">3.17. <code class="docutils literal notranslate"><span class="pre">.ASCSTR</span> <span class="pre">"HELLO</span> <span class="pre">WORLD!",</span> <span class="pre">$A</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#asctable">3.18. <code class="docutils literal notranslate"><span class="pre">.ASCTABLE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#asm">3.19. <code class="docutils literal notranslate"><span class="pre">.ASM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#assert-value-1-1">3.20. <code class="docutils literal notranslate"><span class="pre">.ASSERT</span> <span class="pre">VALUE_1</span> <span class="pre">==</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#background-parallax-gb">3.21. <code class="docutils literal notranslate"><span class="pre">.BACKGROUND</span> <span class="pre">"parallax.gb"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#bank-0-slot-1">3.22. <code class="docutils literal notranslate"><span class="pre">.BANK</span> <span class="pre">0</span> <span class="pre">SLOT</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#base-80">3.23. <code class="docutils literal notranslate"><span class="pre">.BASE</span> <span class="pre">$80</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#bits-4-data-1011-0100-1010-0101">3.24. <code class="docutils literal notranslate"><span class="pre">.BITS</span> <span class="pre">4</span> <span class="pre">DATA</span> <span class="pre">%1011,</span> <span class="pre">%0100,</span> <span class="pre">%1010,</span> <span class="pre">%0101</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#block-block1">3.25. <code class="docutils literal notranslate"><span class="pre">.BLOCK</span> <span class="pre">"Block1"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#br">3.26. <code class="docutils literal notranslate"><span class="pre">.BR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#break">3.27. <code class="docutils literal notranslate"><span class="pre">.BREAK</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#breakpoint">3.28. <code class="docutils literal notranslate"><span class="pre">.BREAKPOINT</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#byt-100-30-1000-hello-world">3.29. <code class="docutils literal notranslate"><span class="pre">.BYT</span> <span class="pre">100,</span> <span class="pre">$30,</span> <span class="pre">%1000,</span> <span class="pre">"HELLO</span> <span class="pre">WORLD!"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#cartridgetype-1">3.30. <code class="docutils literal notranslate"><span class="pre">.CARTRIDGETYPE</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#computegbchecksum">3.31. <code class="docutils literal notranslate"><span class="pre">.COMPUTEGBCHECKSUM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#computegbcomplementcheck">3.32. <code class="docutils literal notranslate"><span class="pre">.COMPUTEGBCOMPLEMENTCHECK</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#computesmdchecksum">3.33. <code class="docutils literal notranslate"><span class="pre">.COMPUTESMDCHECKSUM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#computesmschecksum">3.34. <code class="docutils literal notranslate"><span class="pre">.COMPUTESMSCHECKSUM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#computesneschecksum">3.35. <code class="docutils literal notranslate"><span class="pre">.COMPUTESNESCHECKSUM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#continue">3.36. <code class="docutils literal notranslate"><span class="pre">.CONTINUE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#countrycode-1">3.37. <code class="docutils literal notranslate"><span class="pre">.COUNTRYCODE</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#data-ff00-2">3.38. <code class="docutils literal notranslate"><span class="pre">.DATA</span> <span class="pre">$ff00,</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#db-100-30-1000-hello-world">3.39. <code class="docutils literal notranslate"><span class="pre">.DB</span> <span class="pre">100,</span> <span class="pre">$30,</span> <span class="pre">%1000,</span> <span class="pre">"HELLO</span> <span class="pre">WORLD!"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dbcos-0-2-10-3-2-120-1-3">3.40. <code class="docutils literal notranslate"><span class="pre">.DBCOS</span> <span class="pre">0.2,</span> <span class="pre">10,</span> <span class="pre">3.2,</span> <span class="pre">120,</span> <span class="pre">1.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dbm-filtermacro-1-2-encrypt-me">3.41. <code class="docutils literal notranslate"><span class="pre">.DBM</span> <span class="pre">filtermacro</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">"encrypt</span> <span class="pre">me"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dbrnd-20-0-10">3.42. <code class="docutils literal notranslate"><span class="pre">.DBRND</span> <span class="pre">20,</span> <span class="pre">0,</span> <span class="pre">10</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dbsin-0-2-10-3-2-120-1-3">3.43. <code class="docutils literal notranslate"><span class="pre">.DBSIN</span> <span class="pre">0.2,</span> <span class="pre">10,</span> <span class="pre">3.2,</span> <span class="pre">120,</span> <span class="pre">1.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dd-1ffffff-2000000">3.44. <code class="docutils literal notranslate"><span class="pre">.DD</span> <span class="pre">$1ffffff,</span> <span class="pre">$2000000</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ddm-filtermacro-1-2-3">3.45. <code class="docutils literal notranslate"><span class="pre">.DDM</span> <span class="pre">filtermacro</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#def-if-ff0f">3.46. <code class="docutils literal notranslate"><span class="pre">.DEF</span> <span class="pre">IF</span> <span class="pre">$FF0F</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#define-if-ff0f">3.47. <code class="docutils literal notranslate"><span class="pre">.DEFINE</span> <span class="pre">IF</span> <span class="pre">$FF0F</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#destinationcode-1">3.48. <code class="docutils literal notranslate"><span class="pre">.DESTINATIONCODE</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dl-102030-405060">3.49. <code class="docutils literal notranslate"><span class="pre">.DL</span> <span class="pre">$102030,</span> <span class="pre">$405060</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dlm-filtermacro-1-2-3">3.50. <code class="docutils literal notranslate"><span class="pre">.DLM</span> <span class="pre">filtermacro</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ds-256-10">3.51. <code class="docutils literal notranslate"><span class="pre">.DS</span> <span class="pre">256,</span> <span class="pre">$10</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dsb-256-10">3.52. <code class="docutils literal notranslate"><span class="pre">.DSB</span> <span class="pre">256,</span> <span class="pre">$10</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dsd-256-1ffffff">3.53. <code class="docutils literal notranslate"><span class="pre">.DSD</span> <span class="pre">256,</span> <span class="pre">$1ffffff</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dsl-16-102030">3.54. <code class="docutils literal notranslate"><span class="pre">.DSL</span> <span class="pre">16,</span> <span class="pre">$102030</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dstruct-waterdrop-instanceof-water-values">3.55. <code class="docutils literal notranslate"><span class="pre">.DSTRUCT</span> <span class="pre">waterdrop</span> <span class="pre">INSTANCEOF</span> <span class="pre">water</span> <span class="pre">VALUES</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dsw-128-20">3.56. <code class="docutils literal notranslate"><span class="pre">.DSW</span> <span class="pre">128,</span> <span class="pre">20</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dw-16000-10-255">3.57. <code class="docutils literal notranslate"><span class="pre">.DW</span> <span class="pre">16000,</span> <span class="pre">10,</span> <span class="pre">255</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dwcos-0-2-10-3-2-1024-1-3">3.58. <code class="docutils literal notranslate"><span class="pre">.DWCOS</span> <span class="pre">0.2,</span> <span class="pre">10,</span> <span class="pre">3.2,</span> <span class="pre">1024,</span> <span class="pre">1.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dwm-filtermacro-1-2-3">3.59. <code class="docutils literal notranslate"><span class="pre">.DWM</span> <span class="pre">filtermacro</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dwrnd-20-0-10">3.60. <code class="docutils literal notranslate"><span class="pre">.DWRND</span> <span class="pre">20,</span> <span class="pre">0,</span> <span class="pre">10</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#dwsin-0-2-10-3-2-1024-1-3">3.61. <code class="docutils literal notranslate"><span class="pre">.DWSIN</span> <span class="pre">0.2,</span> <span class="pre">10,</span> <span class="pre">3.2,</span> <span class="pre">1024,</span> <span class="pre">1.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#elif-defined-debug-version-110">3.62. <code class="docutils literal notranslate"><span class="pre">.ELIF</span> <span class="pre">defined(DEBUG)</span> <span class="pre">&amp;&amp;</span> <span class="pre">VERSION</span> <span class="pre">&gt;</span> <span class="pre">110</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#else">3.63. <code class="docutils literal notranslate"><span class="pre">.ELSE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#emptyfill-c9">3.64. <code class="docutils literal notranslate"><span class="pre">.EMPTYFILL</span> <span class="pre">$C9</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endasm">3.65. <code class="docutils literal notranslate"><span class="pre">.ENDASM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#enda">3.66. <code class="docutils literal notranslate"><span class="pre">.ENDA</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endb">3.67. <code class="docutils literal notranslate"><span class="pre">.ENDB</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endbits">3.68. <code class="docutils literal notranslate"><span class="pre">.ENDBITS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endemuvector">3.69. <code class="docutils literal notranslate"><span class="pre">.ENDEMUVECTOR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ende">3.70. <code class="docutils literal notranslate"><span class="pre">.ENDE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endif">3.71. <code class="docutils literal notranslate"><span class="pre">.ENDIF</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endme">3.72. <code class="docutils literal notranslate"><span class="pre">.ENDME</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endm">3.73. <code class="docutils literal notranslate"><span class="pre">.ENDM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endnativevector">3.74. <code class="docutils literal notranslate"><span class="pre">.ENDNATIVEVECTOR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endro">3.75. <code class="docutils literal notranslate"><span class="pre">.ENDRO</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endr">3.76. <code class="docutils literal notranslate"><span class="pre">.ENDR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endsnes">3.77. <code class="docutils literal notranslate"><span class="pre">.ENDSNES</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endst">3.78. <code class="docutils literal notranslate"><span class="pre">.ENDST</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ends">3.79. <code class="docutils literal notranslate"><span class="pre">.ENDS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#endu">3.80. <code class="docutils literal notranslate"><span class="pre">.ENDU</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#enum-c000">3.81. <code class="docutils literal notranslate"><span class="pre">.ENUM</span> <span class="pre">$C000</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#enumid-id-1-0">3.82. <code class="docutils literal notranslate"><span class="pre">.ENUMID</span> <span class="pre">ID_1</span> <span class="pre">0</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#equ-if-ff0f">3.83. <code class="docutils literal notranslate"><span class="pre">.EQU</span> <span class="pre">IF</span> <span class="pre">$FF0F</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#exhirom">3.84. <code class="docutils literal notranslate"><span class="pre">.EXHIROM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#export-work-x">3.85. <code class="docutils literal notranslate"><span class="pre">.EXPORT</span> <span class="pre">work_x</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fail-the-eye-of-mordor-has-seen-us">3.86. <code class="docutils literal notranslate"><span class="pre">.FAIL</span> <span class="pre">"THE</span> <span class="pre">EYE</span> <span class="pre">OF</span> <span class="pre">MORDOR</span> <span class="pre">HAS</span> <span class="pre">SEEN</span> <span class="pre">US!"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#faraddr-main-irq-1">3.87. <code class="docutils literal notranslate"><span class="pre">.FARADDR</span> <span class="pre">main,</span> <span class="pre">irq_1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fastrom">3.88. <code class="docutils literal notranslate"><span class="pre">.FASTROM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fclose-fp-databin">3.89. <code class="docutils literal notranslate"><span class="pre">.FCLOSE</span> <span class="pre">FP_DATABIN</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#filter-filtermacro-1-2-encrypt-me">3.90. <code class="docutils literal notranslate"><span class="pre">.FILTER</span> <span class="pre">filtermacro</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">"encrypt</span> <span class="pre">me"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fopen-data-bin-fp-databin">3.91. <code class="docutils literal notranslate"><span class="pre">.FOPEN</span> <span class="pre">"data.bin"</span> <span class="pre">FP_DATABIN</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fread-fp-databin-data">3.92. <code class="docutils literal notranslate"><span class="pre">.FREAD</span> <span class="pre">FP_DATABIN</span> <span class="pre">DATA</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fseek-fp-databin-10-start">3.93. <code class="docutils literal notranslate"><span class="pre">.FSEEK</span> <span class="pre">FP_DATABIN</span> <span class="pre">10</span> <span class="pre">START</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#fsize-fp-databin-size">3.94. <code class="docutils literal notranslate"><span class="pre">.FSIZE</span> <span class="pre">FP_DATABIN</span> <span class="pre">SIZE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ftell-fp-databin-position">3.95. <code class="docutils literal notranslate"><span class="pre">.FTELL</span> <span class="pre">FP_DATABIN</span> <span class="pre">POSITION</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#function-sum-ab-vara-varb">3.96. <code class="docutils literal notranslate"><span class="pre">.FUNCTION</span> <span class="pre">SUM_AB(varA,varB)</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#gbheader">3.97. <code class="docutils literal notranslate"><span class="pre">.GBHEADER</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#hex-a0a0ffde">3.98. <code class="docutils literal notranslate"><span class="pre">.HEX</span> <span class="pre">"a0A0ffDE"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#hirom">3.99. <code class="docutils literal notranslate"><span class="pre">.HIROM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#if-debug-2">3.100. <code class="docutils literal notranslate"><span class="pre">.IF</span> <span class="pre">DEBUG</span> <span class="pre">==</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifdef-if">3.101. <code class="docutils literal notranslate"><span class="pre">.IFDEF</span> <span class="pre">IF</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifdefm-2">3.102. <code class="docutils literal notranslate"><span class="pre">.IFDEFM</span> <span class="pre">\2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifeq-debug-2">3.103. <code class="docutils literal notranslate"><span class="pre">.IFEQ</span> <span class="pre">DEBUG</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifexists-main-s">3.104. <code class="docutils literal notranslate"><span class="pre">.IFEXISTS</span> <span class="pre">"main.s"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifgr-debug-2">3.105. <code class="docutils literal notranslate"><span class="pre">.IFGR</span> <span class="pre">DEBUG</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifgreq-debug-2">3.106. <code class="docutils literal notranslate"><span class="pre">.IFGREQ</span> <span class="pre">DEBUG</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifle-debug-2">3.107. <code class="docutils literal notranslate"><span class="pre">.IFLE</span> <span class="pre">DEBUG</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifleeq-debug-2">3.108. <code class="docutils literal notranslate"><span class="pre">.IFLEEQ</span> <span class="pre">DEBUG</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifndef-if">3.109. <code class="docutils literal notranslate"><span class="pre">.IFNDEF</span> <span class="pre">IF</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifndefm-2">3.110. <code class="docutils literal notranslate"><span class="pre">.IFNDEFM</span> <span class="pre">\2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ifneq-debug-2">3.111. <code class="docutils literal notranslate"><span class="pre">.IFNEQ</span> <span class="pre">DEBUG</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#inc-cgb-hardware-i">3.112. <code class="docutils literal notranslate"><span class="pre">.INC</span> <span class="pre">"cgb_hardware.i"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#incbin-sorority-bin">3.113. <code class="docutils literal notranslate"><span class="pre">.INCBIN</span> <span class="pre">"sorority.bin"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#incdir-usr-programming-gb-include">3.114. <code class="docutils literal notranslate"><span class="pre">.INCDIR</span> <span class="pre">"/usr/programming/gb/include/"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#include-cgb-hardware-i">3.115. <code class="docutils literal notranslate"><span class="pre">.INCLUDE</span> <span class="pre">"cgb_hardware.i"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#index-8">3.116. <code class="docutils literal notranslate"><span class="pre">.INDEX</span> <span class="pre">8</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#input-name">3.117. <code class="docutils literal notranslate"><span class="pre">.INPUT</span> <span class="pre">NAME</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#licenseecodenew-1a">3.118. <code class="docutils literal notranslate"><span class="pre">.LICENSEECODENEW</span> <span class="pre">"1A"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#licenseecodeold-1a">3.119. <code class="docutils literal notranslate"><span class="pre">.LICENSEECODEOLD</span> <span class="pre">$1A</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#long-102030-405060">3.120. <code class="docutils literal notranslate"><span class="pre">.LONG</span> <span class="pre">$102030,</span> <span class="pre">$405060</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#lorom">3.121. <code class="docutils literal notranslate"><span class="pre">.LOROM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#macro-test">3.122. <code class="docutils literal notranslate"><span class="pre">.MACRO</span> <span class="pre">TEST</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#memorymap">3.123. <code class="docutils literal notranslate"><span class="pre">.MEMORYMAP</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#name-name-of-the-rom">3.124. <code class="docutils literal notranslate"><span class="pre">.NAME</span> <span class="pre">"NAME</span> <span class="pre">OF</span> <span class="pre">THE</span> <span class="pre">ROM"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#nextu-name">3.125. <code class="docutils literal notranslate"><span class="pre">.NEXTU</span> <span class="pre">name</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#nintendologo">3.126. <code class="docutils literal notranslate"><span class="pre">.NINTENDOLOGO</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#nowdc">3.127. <code class="docutils literal notranslate"><span class="pre">.NOWDC</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#org-150">3.128. <code class="docutils literal notranslate"><span class="pre">.ORG</span> <span class="pre">$150</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#orga-150">3.129. <code class="docutils literal notranslate"><span class="pre">.ORGA</span> <span class="pre">$150</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#outname-other-o">3.130. <code class="docutils literal notranslate"><span class="pre">.OUTNAME</span> <span class="pre">"other.o"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#print-numbers-1-and-10-dec-1-hex-10-n">3.131. <code class="docutils literal notranslate"><span class="pre">.PRINT</span> <span class="pre">"Numbers</span> <span class="pre">1</span> <span class="pre">and</span> <span class="pre">10:</span> <span class="pre">",</span> <span class="pre">DEC</span> <span class="pre">1,</span> <span class="pre">"</span> <span class="pre">$",</span> <span class="pre">HEX</span> <span class="pre">10,</span> <span class="pre">"\n"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#printt-here-we-are-n">3.132. <code class="docutils literal notranslate"><span class="pre">.PRINTT</span> <span class="pre">"Here</span> <span class="pre">we</span> <span class="pre">are...\n"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#printv-dec-debug-1">3.133. <code class="docutils literal notranslate"><span class="pre">.PRINTV</span> <span class="pre">DEC</span> <span class="pre">DEBUG+1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ramsection-vars-base-7e-bank-0-slot-1-align-256-offset-32">3.134. <code class="docutils literal notranslate"><span class="pre">.RAMSECTION</span> <span class="pre">"Vars"</span> <span class="pre">BASE</span> <span class="pre">$7E</span> <span class="pre">BANK</span> <span class="pre">0</span> <span class="pre">SLOT</span> <span class="pre">1</span> <span class="pre">ALIGN</span> <span class="pre">256</span> <span class="pre">OFFSET</span> <span class="pre">32</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#ramsize-0">3.135. <code class="docutils literal notranslate"><span class="pre">.RAMSIZE</span> <span class="pre">0</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#redef-if-0f">3.136. <code class="docutils literal notranslate"><span class="pre">.REDEF</span> <span class="pre">IF</span> <span class="pre">$0F</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#redefine-if-0f">3.137. <code class="docutils literal notranslate"><span class="pre">.REDEFINE</span> <span class="pre">IF</span> <span class="pre">$0F</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#repeat-6">3.138. <code class="docutils literal notranslate"><span class="pre">.REPEAT</span> <span class="pre">6</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#rept-6">3.139. <code class="docutils literal notranslate"><span class="pre">.REPT</span> <span class="pre">6</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#rombankmap">3.140. <code class="docutils literal notranslate"><span class="pre">.ROMBANKMAP</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#rombanks-2">3.141. <code class="docutils literal notranslate"><span class="pre">.ROMBANKS</span> <span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#rombanksize-4000">3.142. <code class="docutils literal notranslate"><span class="pre">.ROMBANKSIZE</span> <span class="pre">$4000</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#romdmg">3.143. <code class="docutils literal notranslate"><span class="pre">.ROMDMG</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#romgbconly">3.144. <code class="docutils literal notranslate"><span class="pre">.ROMGBCONLY</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#romgbc">3.145. <code class="docutils literal notranslate"><span class="pre">.ROMGBC</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#romsgb">3.146. <code class="docutils literal notranslate"><span class="pre">.ROMSGB</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#romsize-1">3.147. <code class="docutils literal notranslate"><span class="pre">.ROMSIZE</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#row-ff00-1-3">3.148. <code class="docutils literal notranslate"><span class="pre">.ROW</span> <span class="pre">$ff00,</span> <span class="pre">1,</span> <span class="pre">"3"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#sdsctag-1-0-dungeon-man-a-wild-dungeon-exploration-game-ville-helin">3.149. <code class="docutils literal notranslate"><span class="pre">.SDSCTAG</span> <span class="pre">1.0,</span> <span class="pre">"DUNGEON</span> <span class="pre">MAN",</span> <span class="pre">"A</span> <span class="pre">wild</span> <span class="pre">dungeon</span> <span class="pre">exploration</span> <span class="pre">game",</span> <span class="pre">"Ville</span> <span class="pre">Helin"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#section-init-force">3.150. <code class="docutils literal notranslate"><span class="pre">.SECTION</span> <span class="pre">"Init"</span> <span class="pre">FORCE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#seed-123">3.151. <code class="docutils literal notranslate"><span class="pre">.SEED</span> <span class="pre">123</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#seedrandom">3.152. <code class="docutils literal notranslate"><span class="pre">.SEEDRANDOM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#shift">3.153. <code class="docutils literal notranslate"><span class="pre">.SHIFT</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#slot-1">3.154. <code class="docutils literal notranslate"><span class="pre">.SLOT</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#slowrom">3.155. <code class="docutils literal notranslate"><span class="pre">.SLOWROM</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#smc">3.156. <code class="docutils literal notranslate"><span class="pre">.SMC</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#smdheader">3.157. <code class="docutils literal notranslate"><span class="pre">.SMDHEADER</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#smsheader">3.158. <code class="docutils literal notranslate"><span class="pre">.SMSHEADER</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#smstag">3.159. <code class="docutils literal notranslate"><span class="pre">.SMSTAG</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#snesemuvector">3.160. <code class="docutils literal notranslate"><span class="pre">.SNESEMUVECTOR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#snesheader">3.161. <code class="docutils literal notranslate"><span class="pre">.SNESHEADER</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#snesnativevector">3.162. <code class="docutils literal notranslate"><span class="pre">.SNESNATIVEVECTOR</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#stringmap-script-hello-n">3.163. <code class="docutils literal notranslate"><span class="pre">.STRINGMAP</span> <span class="pre">script</span> <span class="pre">"Hello\n"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#stringmaptable-script-script-tbl">3.164. <code class="docutils literal notranslate"><span class="pre">.STRINGMAPTABLE</span> <span class="pre">script</span> <span class="pre">"script.tbl"</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#struct-enemy-object">3.165. <code class="docutils literal notranslate"><span class="pre">.STRUCT</span> <span class="pre">enemy_object</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#sym-sausage">3.166. <code class="docutils literal notranslate"><span class="pre">.SYM</span> <span class="pre">SAUSAGE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#symbol-sausage">3.167. <code class="docutils literal notranslate"><span class="pre">.SYMBOL</span> <span class="pre">SAUSAGE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#table-byte-word-byte">3.168. <code class="docutils literal notranslate"><span class="pre">.TABLE</span> <span class="pre">byte,</span> <span class="pre">word,</span> <span class="pre">byte</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#unbackground-1000-1fff">3.169. <code class="docutils literal notranslate"><span class="pre">.UNBACKGROUND</span> <span class="pre">$1000</span> <span class="pre">$1FFF</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#undef-debug">3.170. <code class="docutils literal notranslate"><span class="pre">.UNDEF</span> <span class="pre">DEBUG</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#undefine-debug">3.171. <code class="docutils literal notranslate"><span class="pre">.UNDEFINE</span> <span class="pre">DEBUG</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#union-name">3.172. <code class="docutils literal notranslate"><span class="pre">.UNION</span> <span class="pre">name</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#version-1">3.173. <code class="docutils literal notranslate"><span class="pre">.VERSION</span> <span class="pre">1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#wdc">3.174. <code class="docutils literal notranslate"><span class="pre">.WDC</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#while-counter-0">3.175. <code class="docutils literal notranslate"><span class="pre">.WHILE</span> <span class="pre">COUNTER</span> <span class="pre">&gt;</span> <span class="pre">0</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmdiv.html#word-16000-10-255">3.176. <code class="docutils literal notranslate"><span class="pre">.WORD</span> <span class="pre">16000,</span> <span class="pre">10,</span> <span class="pre">255</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html">4. Assembler Syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#case-sensitivity">4.1. Case Sensitivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#comments">4.2. Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#line-splitting">4.3. Line splitting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#using-commas">4.4. Using Commas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#labels">4.5. Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#number-types">4.6. Number Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#strings">4.7. Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#substitution">4.8. Substitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#mnemonics">4.9. Mnemonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/asmsyntax.html#brackets">4.10. Brackets?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/errormsg.html">5. Error Messages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/gb-support.html">6. Supported ROM/RAM/Cartridge Types (WLA-GB)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/gb-support.html#rom-size">6.1. ROM Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/gb-support.html#ram-size">6.2. RAM Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/gb-support.html#cartridge-type">6.3. Cartridge Type</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/bugs.html">7. Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/files.html">8. Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/files.html#tests">8.1. <code class="docutils literal notranslate"><span class="pre">tests</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/files.html#tests-gb-z80-lib">8.2. <code class="docutils literal notranslate"><span class="pre">tests/gb-z80/lib</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/files.html#memorymaps">8.3. <code class="docutils literal notranslate"><span class="pre">memorymaps</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/functions.html">9. Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/functions.html#user-defined-functions">9.1. User defined functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/functions.html#built-in-functions">9.2. Built-in functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/functions.html#examples-of-functions">9.3. Examples of functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/tempfiles.html">10. Temporary Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/compiling.html">11. Compiling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/compiling.html#compiling-object-files">11.1. Compiling Object Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/compiling.html#compiling-library-files">11.2. Compiling Library Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/linking.html">12. Linking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/arithmetics.html">13. Arithmetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/bintodb.html">14. Binary to DB Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html">15. Things you should know about coding for…</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#z80">15.1. Z80</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#codesub6502">15.2. 6502</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#c02">15.3. 65C02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#ce02">15.4. 65CE02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#codesub65816">15.5. 65816</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#huc6280">15.6. HUC6280</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#spc-700">15.7. SPC-700</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#pocket-voice-gb-z80">15.8. Pocket Voice (GB-Z80)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/codetoknow.html#gb-z80">15.9. GB-Z80</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/wlaflags.html">16. WLA Flags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/extraflags.html">17. Extra compile time definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/goodtoknow.html">18. Good things to know about WLA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/archoverview.html">19. WLA DX’s architectural overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/archoverview.html#wla">19.1. WLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/archoverview.html#wlalink">19.2. WLALINK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html">20. WLA Symbols</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#wla-symbol-version-history">20.1. WLA Symbol Version History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#information-for-emulator-developers">20.2. Information For Emulator Developers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#information">20.2.1. [information]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#labels">20.2.2. [labels]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#definitions">20.2.3. [definitions]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#breakpoints">20.2.4. [breakpoints]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#symbols">20.2.5. [symbols]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#source-files-v2">20.2.6. [source files v2]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#rom-checksum">20.2.7. [rom checksum]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#addr-to-line-mapping-v2">20.2.8. [addr-to-line mapping v2]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#sections">20.2.9. [sections]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/symbols.html#ramsections">20.2.10. [ramsections]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/legal.html">21. Legal Note</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/man/wlalink.html">1. Manpage: WLA-LINK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/man/wla-cpu.html">2. Manpage: WLA-CPU</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://wla-dx.readthedocs.io/en/latest/man/wlab.html">3. Manpage: WLAB</a></li>
+</ul>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="https://wla-dx.readthedocs.io/en/latest/introduction.html" title="next chapter"><span class="section-number">1. </span>Introduction</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://wla-dx.readthedocs.io/en/latest/_sources/index.rst.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: block;" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://wla-dx.readthedocs.io/en/latest/genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="https://wla-dx.readthedocs.io/en/latest/introduction.html" title="1. Introduction">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">wla-dx 10.7a documentation</a> »</li>
+        <li class="nav-item nav-item-this"><a href="">&lt;no title&gt;</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    © Copyright 1998, vhelin.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  
+<!-- Inserted RTD Footer -->
+
+<div class="injected">
+
+  
+  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book">&nbsp;</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+        <dd>
+          <a href="https://wla-dx.readthedocs.io/en/master/">master</a>
+        </dd>
+        
+        <dd class="rtd-current-item">
+          <a href="https://wla-dx.readthedocs.io/en/latest/">latest</a>
+        </dd>
+        
+        <dd>
+          <a href="https://wla-dx.readthedocs.io/en/stable/">stable</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      
+      
+
+      
+      <dl>
+        
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/wla-dx/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/wla-dx/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/wla-dx/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/vhelin/wla-dx/blob/master/doc/index.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/vhelin/wla-dx/edit/master/doc/index.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="//readthedocs.org/projects/wla-dx/search/" method="get">
+              <input type="text" name="q" aria-label="Search docs" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+      <hr>
+
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+    </div>
+  </div>
+  
+
+</div>
+</body></html>
